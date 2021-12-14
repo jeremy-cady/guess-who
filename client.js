@@ -26,16 +26,31 @@ function displayPeople() {
             </div>
         `);
         let personNumber = randomNumber(1, 7);
+
+        if(personNumber===1 && person.name==='Dev') {
+            $('.name').append(person.name);
+        }
+        if(personNumber===2 && person.name==='Dane') {
+            $('.name').append(person.name);
+        }
+        if(personNumber===3 && person.name==='Matt') {
+            $('.name').append(person.name);
+        }
+        if(personNumber===4 && person.name==='Kris') {
+            $('.name').append(person.name);
+        }
+        if(personNumber===5 && person.name==='Edan') {
+            $('.name').append(person.name);
+        }
+        if(personNumber===6 && person.name==='Liz') {
+            $('.name').append(person.name);
+        }
+        if(personNumber===7 && person.name==='Chris') {
+            $('.name').append(person.name);
+        }
         console.log('this person is:', person.name);
         console.log('this person\'s number is:', personNumber);
-        
     }
-    // switch(personNumber) {
-    //     case 1:
-    //         $('.name').append("Dev");
-    
-    // }
-
 }
 
 
