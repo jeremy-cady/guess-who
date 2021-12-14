@@ -15,16 +15,15 @@ function onReady() {
 function displayPeople() {
     console.log('in displayPeople');
     
-    for(let i=0; i<people.length; i++) {
+    for(person of people) {
         console.log('in for loop');
         
         $('.divsGoHere').append(`
-            <div>
-                <img src="http://github.com/${people.githubUsername}.png?size=250" 
-                    alt="Profile image of ${people.name}"/>
+            <div data-myusername="${person.githubUsername}">
+            <img src="http://github.com/${person.githubUsername}.png?size=250" 
+                    alt="Profile image of ${person.name}"/>
+
             </div>
         `);
-    console.log(`${people.githubUsername}`);
-    
     }
 }
