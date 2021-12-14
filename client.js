@@ -25,5 +25,20 @@ function displayPeople() {
 
             </div>
         `);
+        let personNumber = randomNumber(1, 7);
+        console.log('this person is:', person.name);
+        console.log('this person\'s number is:', personNumber);
+        
     }
+    // switch(personNumber) {
+    //     case 1:
+    //         $('.name').append("Dev");
+    
+    // }
+
+}
+
+
+function randomNumber(min, max){
+    return Math.floor(Math.random() * (1 + max - min) + min);
 }
